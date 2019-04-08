@@ -1,6 +1,6 @@
-import React from 'react';
-import firebase from 'firebase';
-import gameData from './gameData.js';
+import React from "react";
+import firebase from "firebase";
+import gameData from "./gameData.js";
 
 const SESSION_DATA_PATH = "/session";
 const SESSION_METADATA_PATH = "/session-metadata";
@@ -11,7 +11,7 @@ export default class GameComponent extends React.Component {
     this.state = {
       creator: props.location.state.creator || "",
       users: props.location.state.users || [],
-      title: props.location.state.title || "Studio Games!",
+      title: props.location.state.title || "Studio Games!"
     };
     document.title = this.state.title;
   }
@@ -37,9 +37,10 @@ export default class GameComponent extends React.Component {
    * data, i.e. '/session/<id>/'.
    */
   getSessionDatabaseRef() {
-    return firebase.database()
-        .ref(SESSION_DATA_PATH)
-        .child(this.getSessionId());
+    return firebase
+      .database()
+      .ref(SESSION_DATA_PATH)
+      .child(this.getSessionId());
   }
 
   /**
@@ -47,9 +48,10 @@ export default class GameComponent extends React.Component {
    * metadata, i.e. '/session-metadata/<id>/'.
    */
   getSessionMetadataDatabaseRef() {
-    return firebase.database()
-        .ref(SESSION_METADATA_PATH)
-        .child(this.getSessionId());
+    return firebase
+      .database()
+      .ref(SESSION_METADATA_PATH)
+      .child(this.getSessionId());
   }
 
   /** Returns the current session ID as stored in Firebase.  */
@@ -95,7 +97,7 @@ export default class GameComponent extends React.Component {
         this.setState({
           creator: data.creator,
           users: data.users,
-          title: title,
+          title: title
         });
         this.onSessionMetadataChanged(data);
       }
