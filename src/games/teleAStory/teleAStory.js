@@ -6,7 +6,7 @@ import UserApi from "../../UserApi.js";
 export default class TeleAStory extends GameComponent {
   constructor(props) {
     super(props);
-    this.getSessionDatabaseRef().set({});
+    this.getSessionDatabaseRef().set({ text: "Hello world" });
   }
   onSessionDataChanged(data) {
     console.log("Data changed!", data);
