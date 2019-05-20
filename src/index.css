@@ -4,15 +4,15 @@ body {
   font-family: sans-serif;
 }
 
-.twentyonequestion .question:hover{
-  text-decoration:underline;
+.twentyonequestion .question:hover {
+  text-decoration: underline;
 }
 
 .spark {
   background-color: #ffcccc;
 }
 
-.spark img{
+.spark img {
   width: 100%;
   max-height: auto;
 }
@@ -36,9 +36,9 @@ body {
 }
 
 .war .playerTwo {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .war .number {
@@ -46,76 +46,163 @@ body {
 }
 
 .mafia {
-  background-color:black;
-  background-image:
-  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
-.mafia p{
- vertical-align: text-top;
- font-family: "Times New Roman", Times, serif;
- font-size:30px;
- color:	white;
+.mafia p {
+  vertical-align: text-top;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  color: white;
 }
 .mafia .color {
-   background-color:white;
-   color: black;
-   font-size: 30px;
-   font-family: "Times New Roman", Times, serif;
-   border-radius: 8px;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 8px;
 }
-
 
 .pokemon #mainTitle {
   text-align: center;
 }
 
 .pokemon {
-  height:1000px;
+  height: 1000px;
   background-image: url("https://img00.deviantart.net/0343/i/2013/048/b/b/pokemon_wallpaper___pikachu_by_kennedyzak-d5vb6hq.png");
 }
 
-.pokemon .playerImage{
-  width:160px;
+.pokemon .playerImage {
+  width: 160px;
 }
 
-.pokemon .playerTwo{
-  float:right;
+.pokemon .playerTwo {
+  float: right;
 }
 
 .pokemon #sub-title {
-text-align: center;
-color: red;
+  text-align: center;
+  color: red;
 }
 
-.pokemon #mainBox{
+.pokemon #mainBox {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
-.pokemon #mainBox .battleImage{
-  height:150px
+.pokemon #mainBox .battleImage {
+  height: 150px;
 }
 
-.pokemon .playerTwo #playerInfo2{
-position: absolute;
-top: 22%;
-left: 75%;
+.pokemon .playerTwo #playerInfo2 {
+  position: absolute;
+  top: 22%;
+  left: 75%;
 }
 
 .pokemon .playerOne .fixed-btns {
-display: flex;
-margin: 0 auto;
+  display: flex;
+  margin: 0 auto;
 }
 
 .pokemon .playerTwo .fixed-btns {
   display: flex;
   margin: 0 auto;
-  }
+}
+
+html {
+  background: url(https://media1.tenor.com/images/3569342de6190d7e2e373832583e8e1d/tenor.gif?itemid=5738211)
+    no-repeat center center fixed;
+  background-size: cover;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Press Start 2P Regular"), local("PressStart2P-Regular"),
+    url(https://fonts.gstatic.com/s/pressstart2p/v7/e3t4euO8T-267oIAQAu6jDQyK3nYivNm4I81PZQ.woff2)
+      format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Press Start 2P Regular"), local("PressStart2P-Regular"),
+    url(https://fonts.gstatic.com/s/pressstart2p/v7/e3t4euO8T-267oIAQAu6jDQyK3nRivNm4I81PZQ.woff2)
+      format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Press Start 2P Regular"), local("PressStart2P-Regular"),
+    url(https://fonts.gstatic.com/s/pressstart2p/v7/e3t4euO8T-267oIAQAu6jDQyK3nWivNm4I81PZQ.woff2)
+      format("woff2");
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Press Start 2P Regular"), local("PressStart2P-Regular"),
+    url(https://fonts.gstatic.com/s/pressstart2p/v7/e3t4euO8T-267oIAQAu6jDQyK3nbivNm4I81PZQ.woff2)
+      format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Press Start 2P Regular"), local("PressStart2P-Regular"),
+    url(https://fonts.gstatic.com/s/pressstart2p/v7/e3t4euO8T-267oIAQAu6jDQyK3nVivNm4I81.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+.teleAStoryText {
+  font-family: "Press Start 2P";
+  color: white;
+}
+.teleAStoryButton {
+  /* margin:20%; */
+  display: block;
+  height: 80px;
+  width: 80px;
+  border: 1px solid purple;
+  border-radius: 100%;
+}
+
+.storyTimeArea {
+  margin: 50%;
+}
